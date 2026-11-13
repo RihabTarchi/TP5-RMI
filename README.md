@@ -17,7 +17,7 @@ Projet `RMIConversion_Server` contenant :
 - `rmiService/ConversionImpl` : implémentation du service
 - `rmiServer/ConversionServer` : démarre le registre RMI et publie l'objet
 
-![Structure du serveur](captures/1.png)
+![Structure du serveur](images/1.png)
 ![Code du serveur](captures/2.png)
 ![Code du serveur](captures/3.png)
 ![Code du serveur](captures/4.png)
