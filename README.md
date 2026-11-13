@@ -18,24 +18,24 @@ Projet `RMIConversion_Server` contenant :
 - `rmiServer/ConversionServer` : démarre le registre RMI et publie l'objet
 
 ![Structure du serveur](images/1.png)
-![Code du serveur](captures/2.png)
-![Code du serveur](captures/3.png)
-![Code du serveur](captures/4.png)
+![Code du serveur](images/2.png)
+![Code du serveur](images/3.png)
+![Code du serveur](images/4.png)
 
 ## Étape 2 : Développement du client
 
 Génération de `conversionClient.jar` (interface seulement), ajout au classpath, puis création de `rmiClient/ConversionClient`.
 
-![Création du JAR](captures/6.png)
+![Création du JAR](images/6.png)
 
-![Code du client](captures/5.png)
+![Code du client](images/5.png)
 
 ## Étape 3 : Exécution
 
 Lancement du serveur, puis du client.
 
-![Exécution du serveur](captures/7.png)
-![Exécution du client](captures/8.png)
+![Exécution du serveur](images/7.png)
+![Exécution du client](images/8.png)
 
 ## Synthèse
 
