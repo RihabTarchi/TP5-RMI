@@ -40,3 +40,17 @@ Lancement du serveur, puis du client.
 ## Synthèse
 
 RMI permet au client d'appeler une méthode d'un objet situé sur une autre JVM comme s'il était local, grâce au stub. Le cycle de vie d'un service distant comprend : la définition de l'interface (`IConversion`), l'implémentation (`ConversionImpl`), l'enregistrement dans le RMIRegistry (`rebind`) et l'invocation par le client (`lookup` puis appel de `convertirMontant`). Le client ne connaît que l'interface, pas l'implémentation.
+
+## Activité 5-2 : Service de banque (RMI + JNDI)
+
+- `Activite5-2/Server/` : serveur (`Compte`, `IBanque`, `BanqueImpl`, `BanqueServer`)
+- `Activite5-2/Client/` : client (`BanqueClient`)
+
+![Structure](images/banque_structure.png)
+![JAR](images/banque_jar.png)
+![Exécution RMI](images/banque_rmi.png)
+![Exécution JNDI](images/banque_jndi.png)
+
+### Synthèse
+
+RMI permet d'invoquer des méthodes sur un objet distant comme s'il était local, grâce au stub côté client. L'objet `Compte` passé en paramètre est sérialisé : il doit donc implémenter `Serializable`. JNDI ajoute une couche d'abstraction : le code ne dépend plus de `LocateRegistry` et `Naming`, et on peut changer d'annuaire en modifiant seulement `jndi.properties`.
